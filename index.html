@@ -10,7 +10,10 @@ io<!DOCTYPE HTML>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/jquery-ui.structure.css" />
+		<link rel="stylesheet" href="assets/css/jquery-ui.theme.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		 
 	</head>
 	<body class="is-preload">
 
@@ -50,9 +53,69 @@ io<!DOCTYPE HTML>
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<div id="accordion" >
+								  <h4>Beyond Inc</h4>
+								  <div>
+									<p>
+									Responsible for maintaining and improving the suite of backend and frontend applications that control the MyAccount Online Portal.
+									</p>
+									<p>
+									Led modernization efforts across multiple internal Java services for improved system efficiency and reduced operational costs for the MyAccount Online Portal.
+									</p>
+									<p>
+									Requirements gathering, solution design, story grooming for new features in MyAccount enhancements and issues.
+									</p>
+									<p>
+									Cross-functionally coordinating changes & features with other internal teams and external third parties. 
+									</p>
+									<p>
+									Integrate MyAccount with third-party AI-Driven chatbot for improved automated customer support.
+									</p>
+									<p>
+									Enhance the MyAccount Online Portal React Frontend and Java backend to enable Warranties/Installations as a Post-Purchase experience.
+									</p>
+									<p>
+									Conduct code reviews and implement automated testing procedures to ensure adherence to internal coding standards.
+									</p>
+								  </div>
+								  <h3>Section 2</h3>
+								  <div>
+									<p>
+									Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+									purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+									velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+									suscipit faucibus urna.
+									</p>
+								  </div>
+								  <h3>Section 3</h3>
+								  <div>
+									<p>
+									Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+									Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+									ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+									lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+									</p>
+									<ul>
+									  <li>List item one</li>
+									  <li>List item two</li>
+									  <li>List item three</li>
+									</ul>
+								  </div>
+								  <h3>Section 4</h3>
+								  <div>
+									<p>
+									Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+									et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+									faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+									mauris vel est.
+									</p>
+									<p>
+									Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+									Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+									inceptos himenaeos.
+									</p>
+								  </div>
+								</div>
 							</article>
 
 						<!-- Skills & Expertise -->
@@ -350,10 +413,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery-ui.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			  <script>
+			  $( function() {
+				$( "#accordion" ).accordion({
+				  heightStyle: "content",
+				  collapsible: true,
+				  active: false
+				});
+			  } );
+			  </script>
 
 	</body>
 </html>
